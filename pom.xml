@@ -7,8 +7,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.fosstrak.webadapters</groupId>
 	<artifactId>epcis-webadapter</artifactId>
-	<name>epcis-webadapter</name>
-	<version>0.1.0-SNAPSHOT</version>
+	<name>epcis-webadapter-jersey1_4</name>
+	<version>0.1.0-SNAPSHOT-jersey1.4</version>
 	<packaging>war</packaging>
 
 
@@ -29,22 +29,22 @@
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-server</artifactId>
-            <version>1.2</version>
+            <version>1.4</version>
         </dependency>
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-core</artifactId>
-            <version>1.2</version>
+            <version>1.4</version>
         </dependency>
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>1.2</version>
+            <version>1.4</version>
         </dependency>
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-json</artifactId>
-            <version>1.2</version>
+            <version>1.4</version>
         </dependency>
 
 
@@ -198,71 +198,6 @@
 	<!-- Reporting                                                   -->
 	<!-- =========================================================== -->
 
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>2.1</version>
-				<configuration>
-					<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<configuration>
-					<maxmemory>1024</maxmemory>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jxr-plugin</artifactId>
-				<configuration>
-					<aggregate>true</aggregate>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<linkXref>true</linkXref>
-					<sourceEncoding>utf-8</sourceEncoding>
-					<minimumTokens>100</minimumTokens>
-					<targetJdk>1.5</targetJdk>
-					<excludes>
-						<exclude>**/*Test.java</exclude>
-						<exclude>**/package-info.java</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-changes-plugin</artifactId>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>changes-report</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-				<configuration>
-					<issueLinkTemplate>http://sourceforge.net/support/tracker.php?aid=%ISSUE%</issueLinkTemplate>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>javancss-maven-plugin</artifactId>
-				<version>2.0-beta-2</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>taglist-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</reporting>
-
 <!-- =========================================================== -->
 	<!-- Infrastructure                                              -->
 	<!-- =========================================================== -->
@@ -306,7 +241,7 @@
 
 	<!-- =========================================================== -->
 	<!-- Project Information                                         -->
-	<!-- =========================================================== -->  
+	<!-- =========================================================== -->
 	<url>http://www.fosstrak.org/webadapters</url>
   <licenses>
     <license>
@@ -337,5 +272,8 @@
       <timezone>+1</timezone>
     </developer>
   </developers>
+    <properties>
+        <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
+    </properties>
 </project>
 

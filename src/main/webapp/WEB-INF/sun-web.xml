@@ -41,7 +41,7 @@
  made subject to such option by the copyright holder.
 -->
 <sun-web-app error-url="">
-  <context-root>/epcis</context-root>
+  <context-root>/epcis-webadapter-0.1.0-SNAPSHOT-jersey1.4</context-root>
   <class-loader delegate="true"/>
   <jsp-config>
     <property name="keepgenerated" value="true">
